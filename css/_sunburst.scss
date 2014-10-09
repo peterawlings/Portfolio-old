@@ -1,0 +1,81 @@
+.sunburst {
+    width: 1680px;
+    height: 1332px;
+    margin:-11px -11px -11px -11px;
+    overflow: hidden;
+    position: absolute;
+    top: -600px;
+    left: -750px;
+    z-index: -1;
+
+    .outer {
+       width: 2000px;
+       height: 910px;
+       padding-top: 1090px;
+       margin: -510px 0 0 -310px;
+       animation-name: rotate1;
+       animation-duration:2s;
+       animation-iteration-count:infinite;
+       animation-timing-function:linear;
+       transform-origin: 50% 91.5%;
+       // opacity: 0.2;
+
+    }
+    b {
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 90px 1000px;
+        margin: -180px 0 0 0;
+        border-color: transparent rgb(231, 231, 231);
+        border-style: solid;
+        &:nth-child(1) {
+            transform: rotate(20deg);
+        }
+        &:nth-child(2) {
+            transform: rotate(40deg);
+        }
+        &:nth-child(3) {
+            transform: rotate(60deg);
+        }
+        &:nth-child(4) {
+            transform: rotate(80deg);
+        }
+        &:nth-child(5) {
+            transform: rotate(100deg);
+        }
+        &:nth-child(6) {
+            transform: rotate(120deg);
+        }
+        &:nth-child(7) {
+            transform: rotate(140deg);
+        }
+        &:nth-child(8) {
+            transform: rotate(160deg);
+        }
+        &:nth-child(9) {
+            transform: rotate(180deg);
+        }
+    }
+    .sunburst-gradient {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        // background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(235,235,235,0.91) 49%, rgba(235,235,235,1) 54%); /* FF3.6+ */
+        // background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(49%,rgba(235,235,235,0.91)), color-stop(54%,rgba(235,235,235,1))); /* Chrome,Safari4+ */
+        // background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(235,235,235,0.91) 49%,rgba(235,235,235,1) 54%); /* Chrome10+,Safari5.1+ */
+        // background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(235,235,235,0.91) 49%,rgba(235,235,235,1) 54%); /* Opera 12+ */
+        // background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(235,235,235,0.91) 49%,rgba(235,235,235,1) 54%); /* IE10+ */
+        background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(235,235,235,0.91) 49%,rgba(235,235,235,1) 54%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ebebeb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background-position:100%;
+        background-size: 100%; 
+        animation-name: gradientPulse;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+    }
+}
