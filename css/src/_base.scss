@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html{
+    font:#{($base-font-size/16px)*1em}/#{$base-line-height} $heading-font;
+    overflow-y:scroll;
+    min-height:100%;
+}
+
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+	background-color: $background;
+    // background: #EBEBEB url('../img/rays.png') left top no-repeat;
+  text-align: center;
+  margin: 0;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: $primary-b;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary-b;
+  text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-b;
+  transition: color $transitionOn $transitionEffect, border-color $transitionOn $transitionEffect;
+  border-bottom: 2px solid transparent;
+  &:hover, &:focus {
+    color: lighten($primary-a, 10%);
+    border-bottom-color: lighten($primary-a, 10%);
+  }
+}
+
+hr {
+  border: 5px solid $primary-a;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: $primary-b;
+  color: $primary-d;
+  padding: 0.2em 0;
+}
+

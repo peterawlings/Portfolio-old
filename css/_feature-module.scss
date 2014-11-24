@@ -1,0 +1,74 @@
+
+
+
+// circular feature
+// .feature {
+//     text-align: center;
+//     max-width: 218px;
+//     > div {
+//         border-radius: 50%;
+//         border: 3px solid rgb(196, 196, 196);
+//         position: relative;
+//         z-index: 1;
+//         overflow: hidden;
+//         box-shadow: inset 0px 0px 8px 1px rgba(255, 255, 255, 1);
+//         > a {
+//             display: block;
+//             background: linear-gradient(to bottom,  rgba(155,155,155,1) 0%,rgba(107,107,107,1) 69%,rgba(91,91,91,1) 100%); /* W3C */
+//             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#5b5b5b',GradientType=0 ); /* IE6-9 */
+            
+//             transition: all 0.2s ease-in;
+//             &:hover, &:focus {
+//                 transform: rotate(20deg);
+//                 opacity: 0.6;
+//                 .image-overlay {
+//                     transform: translate3d(0,220px,0);
+//                     transition: transform 0.2s 0.2s ease;
+//                 }
+//                 .caption {
+//                     transform: translate3d(0,-124px,0) rotate(-20deg);
+//                     opacity: 1;
+//                     // transition: transform 0, opacity 0.2s ease;
+//                     transition: transform 0.5s 0.2s ease, opacity 0.7s 0.2s ease;
+
+//                 }
+//             }
+
+//         }
+
+//     }
+//     .image-overlay {
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       right: 0;
+//       top: -220px;
+//       transition: all 0.2s ease-in;
+//       background: linear-gradient(to bottom,  rgba(221,221,221,1) 0%,rgba(196,196,196,1) 100%); /* W3C */
+//       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#c4c4c4',GradientType=0 ); /* IE6-9 */
+//     }
+//       .caption {
+//         // position: absolute;
+//         display: block;
+//         color: black;
+//         transform: transform3d(0,0,0) rotate(-20deg);
+//         transition: opacity 0.4s ease;
+//         position: absolute;
+//         left: 50%;
+//         width: 150px;
+//         margin-left: -75px;
+//         // transition: transform 0.5s 0.2s ease, opacity 0.7s 0.2s ease;
+//         opacity: 0;
+//       }
+//     .image {
+//         position: relative;
+//         overflow: hidden;
+//         display: block;
+//         height: 0;
+//         padding-bottom: 100%;
+//         background: url('../img/d&i-thumb.jpg') left top no-repeat;
+//         background-size: cover;
+//         background-position: 50%;
+//     }
+// }
+
