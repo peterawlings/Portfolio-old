@@ -1,5 +1,4 @@
-/* jshint ignore:start */
-/* global rm:false, direction */
+/* global rm:false */
 
 rm.waypoints = (function() {
 	'use strict';

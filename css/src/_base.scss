@@ -3,7 +3,7 @@
    ========================================================================== */
 
 html{
-    font:#{($base-font-size/16px)*1em}/#{$base-line-height} $heading-font;
+    font:#{($base-font-size/16px)*1em}/#{$base-line-height} $body-font;
     overflow-y:scroll;
     min-height:100%;
 }
@@ -17,8 +17,7 @@ html{
 }
 
 body {
-	background-color: $background;
-    // background: #EBEBEB url('../img/rays.png') left top no-repeat;
+	background-color: $background-color;
   text-align: center;
   margin: 0;
 }
@@ -85,7 +84,7 @@ a {
 }
 
 hr {
-  border: 5px solid $primary-a;
+  border: 1px solid $background-color;
 }
 
 /* ==========================================================================

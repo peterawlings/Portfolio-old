@@ -10,6 +10,6 @@ $(function () {
     rm.general.init();
     // rm.waypoints.init();
 
-    var s = skrollr.init();
+    // var s = skrollr.init();
 
 });
